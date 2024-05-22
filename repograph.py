@@ -11,7 +11,7 @@ USER = config['USER']
 REPO = config['REPO']
 SINCE = config['SINCE']
 
-def get_contributions(github_token, user, repo):
+def get_contributions(github_token, user, repo, since):
     g = Github(github_token)
     repository = g.get_repo(f'{user}/{repo}')
     
